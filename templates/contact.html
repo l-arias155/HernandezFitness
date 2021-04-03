@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	<aside id="fh5co-hero" class="js-fullheight">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url(/static/images/slide_2.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>¡Contáctanos! Estamos para servirte.</h2>
+		   					<p class="fh5co-lead"><i class="icon-heart"></i></p>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</aside>
+
+	<div class="fh5co-contact animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 col-md-push-2 animate-box">
+					<h2>Contáctenos</h2>
+					<p>Puedes contactarnos a través de nuestras redes sociales, whatsapp con solo hacer click sobre los íconos de abajo o puedes enviarnos un correo en la sección de abajo.</p><br><br>
+
+				</div>
+				<div class="col-md-3">
+					<h3>Información de contacto.</h3>
+					<ul class="contact-info">
+						<li><i class="icon-map"></i>75 metros este y 75 metros norte del salón comunal en guacima centro Guácima, Alajuela Province, Costa Rica</li>
+						<li><i class="icon-phone"></i>+506 8662 7093</li>
+						<ul class="fh5co-social">
+							<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-map-marker"></i></a></li>
+						</ul>
+					</ul>
+				</div>
+				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Nombre" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Teléfono" type="text">
+							</div>
+						</div>
+                        <div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Correo" type="text">
+							</div>
+						</div>
+                        <div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" placeholder="Tema" type="text">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mesaje"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input value="Enviar mensaje" class="btn btn-primary" type="submit">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<div id="map" class="animate-box" data-animate-effect="fadeIn"></div>
+
+{% endblock content %}
