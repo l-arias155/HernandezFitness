@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout_admin.html" %}
 {% block content %}
 
     <div class="content-section">
@@ -7,7 +7,7 @@
             <fieldset class="form-group">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-md-push-2 animate-box">
-                        <h2>Únete hoy</h2>
+                        <h2>Registrar cliente</h2>
                     </div>
 
                     <div class="col-md-8 col-md-offset-1 col-md-push-1 animate-box">
@@ -72,11 +72,6 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-1 col-md-push-1 animate-box">
                    {{ form.submit(class="btn btn-primary btn-outline ")  }}
-                </div>
-                <div class="col-md-8 col-md-offset-1 col-md-push-1 animate-box">
-                    <small class="text-muted">
-                        ¿Ya tienes una cuenta? <a class="ml-2" href="{{ url_for('login') }}">Inicia Sesión</a>
-                    </small>
                 </div>
             </div>
 

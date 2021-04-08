@@ -1,4 +1,4 @@
-from flask import Flask, render_template, flash, redirect, url_for
+from flask import Flask, render_template, flash, redirect, url_for, request
 
 from service.form import LoginForm, RegistrationForm
 
@@ -71,6 +71,8 @@ def admin():
 
 @app.route("/search", methods=['GET', 'POST'])
 def search():
+    if request.method == 'POST':
+        print(request.form['search_data'])
     return render_template('user_account_editable.html', data=data)
 
 
